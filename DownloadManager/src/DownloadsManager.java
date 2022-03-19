@@ -12,7 +12,7 @@ public class DownloadsManager implements Runnable{
 	
 	//----Paths----
 	private String fileSeparator = System.getProperty("file.separator");
-	private String downlaodFolderPath = "C:" + fileSeparator + "Users" + fileSeparator + "bashi" + fileSeparator + "OneDrive" + fileSeparator + "Desktop" + fileSeparator + "DoenloadManagerProject";
+	private String downlaodFolderPath = "C:" + fileSeparator + "Users" + fileSeparator + "bashi" + fileSeparator + "OneDrive" + fileSeparator + "Desktop" + fileSeparator + "DownloadsManager";
 	
 	private File defaultDownloadFolder = new File(downlaodFolderPath);
 	
@@ -39,7 +39,7 @@ public class DownloadsManager implements Runnable{
 			outputFile = new File(defaultDownloadFolder,"newONe.mp3");//hier datai typ geben(mp3,txt,mp4,word....)
 			
 			OutputStream outputStream = new FileOutputStream(outputFile);//in welche datai soll es gespeichert werden
-			BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream,1024);// 1024 byte = 1k byte = Grpﬂer des Bufferdspeichers
+			BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream,1024);// 1024 byte = 1k byte = Grp√üer des Bufferdspeichers
 			
 			byte[] buffer = new byte[1024];
 			int downloaded = 0;//wieviel byte ist gesamt geladen worden?
